@@ -8,7 +8,7 @@ import {ExerciseCard} from "@components/ExerciseCard";
 export function Home() {
     const [exercises, setExercises] = useState(['Puxada Frontal', 'Corrida de Rua', 'Barra lateral'])
     const [groups, setGroups] = useState(['Costas', 'Bícipes', 'Trícipes', 'Ombro'])
-    const [groupSelected, setGroupSelected] = useState('Costa')
+    const [groupSelected, setGroupSelected] = useState('Costas')
 
     return (
         <VStack flex={1}>
