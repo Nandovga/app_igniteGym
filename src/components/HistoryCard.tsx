@@ -10,9 +10,10 @@ export function HistoryCard() {
                 py={4}
                 px={5}
                 mb={3}>
-            <VStack>
+            <VStack mr={5} flex={1}>
                 <Heading color="white"
                          fontSize="md"
+                         numberOfLines={1}
                          textTransform="capitalize">Costas</Heading>
                 <Text color="gray.100"
                       numberOfLines={1}

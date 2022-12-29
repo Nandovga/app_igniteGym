@@ -13,13 +13,13 @@ export function ExerciseCard({...rest}: Props) {
                     mb={3}
                     rounded="md">
                 <Image source={{
-                    uri: "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2022/11/20/292998551-exercicio-fisico-1.jpg"
+                    uri: "https://blog.meupersonalvirtual.com.br/wp-content/uploads/2019/04/284054-scheila-revisar-ate-0204-treino-na-academia-porque-fazer-exercicios-fisicos-na-academia-e-a-melhor-opcao.jpg"
                 }}
                        w={16}
                        h={16}
                        rounded="md"
                        mr={4}
-                       resizeMode="center"
+                       resizeMode="cover"
                        alt="Imagem do exercício"/>
                 <VStack justifyContent="center" flex={1}>
                     <Heading fontSize="lg"
