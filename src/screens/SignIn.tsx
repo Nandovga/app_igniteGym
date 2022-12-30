@@ -27,7 +27,8 @@ export function SignIn() {
                 </Center>
                 <Center>
                     <Heading color="gray.100"
-                             fontSize="xl" mb={6}
+                             fontSize="xl"
+                             mb={6}
                              fontFamily="heading">Acesse sua conta</Heading>
                     <Input placeholder="E-mail"
                            keyboardType="email-address"

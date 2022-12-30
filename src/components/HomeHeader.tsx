@@ -14,8 +14,11 @@ export function HomeHeader() {
                 size={16}
                 mr={4}/>
             <VStack flex={1}>
-                <Text color="gray.100" fontSize="md">Olá</Text>
-                <Heading color="gray.100" fontSize="md">Lionel Messi</Heading>
+                <Text color="gray.100"
+                      fontSize="md">Olá</Text>
+                <Heading color="gray.100"
+                         fontSize="md"
+                         fontFamily="heading">Lionel Messi</Heading>
             </VStack>
             <TouchableOpacity>
                 <Icon as={MaterialIcons}

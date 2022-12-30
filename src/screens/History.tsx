@@ -27,6 +27,7 @@ export function History() {
                              <Heading color="gray.200"
                                       mt={10}
                                       mb={3}
+                                      fontFamily="heading"
                                       fontSize="md">{section.title}</Heading>
                          )}
                          px={8}

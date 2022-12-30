@@ -27,6 +27,7 @@ export function Exercise() {
                         mb={8}>
                     <Heading color="gray.100"
                              flexShrink={1}
+                             fontFamily="heading"
                              fontSize="lg">Puxada Frontal</Heading>
                     <HStack alignItems="center">
                         <BodySvg/>

@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Alert, TouchableOpacity} from "react-native";
+import {TouchableOpacity} from "react-native";
 import {Center, Heading, ScrollView, Skeleton, Text, VStack, useToast} from "native-base";
 import * as ImagePicker from "expo-image-picker"
 import * as FileSystem from 'expo-file-system';
@@ -16,8 +16,11 @@ export function Profile() {
     const [photoIsLoading, setPhotoIsLoading] = useState(true)
     const [userPhoto, setUserPhoto] = useState("https://conteudo.imguol.com.br/c/esporte/96/2021/11/29/lionel-messi-atacante-do-psg-1638213496667_v2_450x450.jpg")
 
+    console.log(photoIsLoading)
+
     //Realiza o carregamento de Imagem do dispositivo do usuário
     async function handleUserPhotoSelect() {
+        setPhotoIsLoading(false)
         try {
             const photoSelected = await ImagePicker.launchImageLibraryAsync({
                 mediaTypes: ImagePicker.MediaTypeOptions.Images,
@@ -42,6 +45,8 @@ export function Profile() {
             setUserPhoto(photoSelected.assets[0].uri)
         } catch (error){
             console.log(error)
+        } finally {
+            setPhotoIsLoading(true)
         }
     }
 
@@ -78,6 +83,7 @@ export function Profile() {
                         mb={9}>
                     <Heading color="gray.200"
                              mb={2}
+                             fontFamily="heading"
                              fontSize="md">Alterar Senha</Heading>
                     <Input bg="gray.600"
                            placeholder="Senha antiga"

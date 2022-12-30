@@ -10,6 +10,7 @@ export function ScreenHeader({title}: Props) {
                 pb={6}
                 pt={16}>
             <Heading color="gray.100"
+                     fontFamily="heading"
                      fontSize="xl">{title}</Heading>
         </Center>
     );

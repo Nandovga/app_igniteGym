@@ -23,7 +23,8 @@ export function ExerciseCard({...rest}: Props) {
                        alt="Imagem do exercício"/>
                 <VStack justifyContent="center" flex={1}>
                     <Heading fontSize="lg"
-                             color="white">Corrida</Heading>
+                             color="white"
+                             fontFamily="heading">Corrida</Heading>
                     <Text fontSize="lg"
                           numberOfLines={2}
                           color="gray.200"
